@@ -1,0 +1,22 @@
+p {
+            background-color: yellow;
+}
+h1 {
+            background-color: brown;
+            color:white;
+}
+#kuljotPara {
+    background-color: aqua;
+    color: white;
+    text-align:center;
+}
+.kuljotPclass{
+    text-align: end;
+    background-color:purple;
+    color: white;
+}
+
+table.kuljotPclass {
+    background-color:crimson;
+    text-align:end;
+}
