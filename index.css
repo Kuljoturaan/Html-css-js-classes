@@ -20,3 +20,24 @@ table.kuljotPclass {
     background-color:crimson;
     text-align:end;
 }
+* {
+    margin: 5px;
+    padding: 2px;
+}
+#testingDiv {
+    background-image: url(./car_image.jpeg);
+    border: 5px solid red;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 50%;
+
+}
+#try {
+    padding: 20px 20px
+}
+h2 {
+    font-family: sans-serif,verdana;
+}
