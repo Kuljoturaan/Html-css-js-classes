@@ -261,20 +261,87 @@
 // console.log(Boolean(undefined))
 // console.log(Boolean(null))
 
-console.log(BigInt(11))
-console.log(BigInt(0x11))
-console.log(BigInt(11e2))
-console.log(BigInt(true))
-console.log(BigInt("11"))
-console.log(BigInt(0x11))
+// console.log(BigInt(11))
+// console.log(BigInt(0x11))
+// console.log(BigInt(11e2))
+// console.log(BigInt(true))
+// console.log(BigInt("11"))
+//console.log(BigInt(0x11))
 //console.log(BigInt("hello"))
 //console.log(BigInt(null))
 //console.log(BigInt(undefined))
 //console.log(BigInt(NaN))
 
-let str1 = 42 + "1"
-console.log(str1)
-console.log("typeof str1",typeof str1)
-let str2 = 42 - "1"
-console.log(str1)
-console.log("typeof str1",typeof str1)
+// let str1 = 42 + "1"
+// console.log(str1)
+// console.log("typeof str1",typeof str1)
+// let str2 = 42 - "1"
+// console.log(str1)
+// console.log("typeof str1",typeof str1)
+// let names = [["Olivia","Mia","Maya"], ["Willam","Kuljot","Sandeep"]]
+// console.log(names[1] [2])
+// console.log(names[1] [1])
+
+// let user1 = {
+//     name:"Sandeep",
+//     surname:"mewada",
+//     email: "sandeep@gmail.com",
+//     age:68,
+// }
+// let user2 = {
+//     name:"Hello",
+//     surname:"mewada",
+//     email: "sandeep@gmail.com",
+//     age:78,
+// }
+// let objArray = [user1,user2]
+// console.log(objArray)
+// console.log(objArray[1])
+// console.log(objArray[2])
+
+// objArray[2] = {
+//     name :"got it ",
+//     surname: "gupta",
+// }
+// console.log(objArray[2].name)
+
+
+// let days = ["sun","mon","tue","wed","thru","fri","sat"]
+// let day = "Sunday"
+// console.log(typeof days)
+// console.log(typeof day)
+// console.log(days instanceof Array)
+// console.log(day instanceof Array)
+
+// console.log("Days length:",days.length)
+// console.log("obj array length:",objArray.length)
+
+// days[7] = "someday"
+// console.log("Days length:",days.length)
+
+// console.log("index of friday:" ,days.indexOf("fri"))
+// console.log("index of friday:" ,days.indexOf("friday"))
+// let names = ["olivia","Sandeep","Kuljot","Amit"]
+// console.log(names.length)
+// names.push ("Amelia")
+// console.log(names)
+
+// let names = ["olivia","Sandeep","Kuljot","Amit"]
+// console.log(names.indexOf("Sandeep"))
+// console.log(names.indexOf("Victors"))
+
+// names.unshift("Victors")
+// console.log(names.indexOf("Victors"))
+// console.log(names)
+
+let names = ["olivia","Sandeep","Kuljot","Amit"]
+console.log(names.length)
+let name = names.pop()
+console.log(name)
+console.log(names)
+
+console.log(names.length)
+name = names.shift()
+console.log(names.length)
+console.log(name)
+console.log(names)
