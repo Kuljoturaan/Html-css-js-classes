@@ -334,14 +334,67 @@
 // console.log(names.indexOf("Victors"))
 // console.log(names)
 
-let names = ["olivia","Sandeep","Kuljot","Amit"]
-console.log(names.length)
-let name = names.pop()
-console.log(name)
-console.log(names)
+// let names = ["olivia","Sandeep","Kuljot","Amit"]
+// console.log(names.length)
+// let name = names.pop()
+// console.log(name)
+// console.log(names)
 
-console.log(names.length)
-name = names.shift()
-console.log(names.length)
-console.log(name)
-console.log(names)
+// console.log(names.length)
+// name = names.shift()
+// console.log(names.length)
+// console.log(name)
+// console.log(names)
+
+// let names = ["Olivia", "kuljot","sandeep","subham"]
+// console.log(names)
+// names.reverse()
+// console.log(names)
+
+// let names = ["Emma","suren",]
+// let n1 =  names.slice(2)
+// console.log(n1)
+// let n2 = names.slice(1,3)
+// console.log(n2)
+// let n3 = names.slice(0,-1)
+// console.log(n3)
+// let n4 = names.slice(-1)
+// console.log(n4)
+// let n5= names.slice(-2)
+// console.log(n5)
+// console.log(names)
+
+// let name1 = ["sumit","amit","Rahul"]
+// names = names.concat(name1)
+// console.log(names)
+
+
+// let year = 2000;
+// let newYear = year = 2001
+// console.log("year",year)
+// console.log("newYear",newYear)
+
+// console.log(2+2*2)
+// console.log(2+(2*2))
+// console.log((2+2)*2)
+
+// arthmatic operator
+// let x= 5
+// let y=2
+// console.log("addition",x+y)
+// console.log("subtraction",x-y)
+// console.log("addition",x*y)
+// console.log("addition",x/y)
+// console.log("addition",x**y)
+
+let str = "123"
+let n1 = +123
+let n2 = -123
+let n3 = -n2
+let n4 = +"abcd"
+
+console.log(`${str} ${typeof str}`)
+console.log(`${n1} ${typeof n1}`)
+console.log(`${n2} ${typeof n2}`)
+console.log(`${n3} ${typeof n3}`)
+console.log(`${n4} ${typeof n4}`)
