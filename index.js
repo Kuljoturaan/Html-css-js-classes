@@ -47,7 +47,7 @@
 // {
 //     counter = 2;
 //     console.log(counter)
-    
+
 //     let count = 2
 //     console.log("count:",count)
 // }
@@ -425,12 +425,87 @@
 // n**=2
 // console.log("n number is ",n)
 //Logical operator
-console.log(true && true)
-console.log(true && false)
-console.log(false && true)
-console.log(false && false)
+// console.log(true && true)
+// console.log(true && false)
+// console.log(false && true)
+// console.log(false && false)
 
-console.log(true || true)
-console.log(true || false)
-console.log(false || true)
-console.log(false || false)
+// console.log(true || true)
+// console.log(true || false)
+// console.log(false || true)
+// console.log(false || false)
+// let nr = 0
+// let year = 2000
+// let name = "Alice"
+// let empty = ""
+
+// console.log(!nr)
+// console.log(!year)
+// console.log(!name)
+// console.log(!empty)
+// console.log(!!nr)
+// console.log(!!name)
+
+// console.log(true && 1990)
+// console.log(false && 2000)
+// console.log(2 && 5)
+// console.log(0 && 5)
+// console.log("Alice" &&"Bob")
+// console.log("" && "Bob")
+// console.log("true" || 1991)
+// console.log(false ||1991)
+// console.log(2||5)
+// console.log(0||5)
+// console.log("Alice"||"Bob")
+// console.log("" ||"Bob")
+
+// let x = 0;
+// let y = 0;
+// console.log(x++ && y++)
+// console.log(x)
+// console.log(y)
+// console.log("---------")
+
+// let a=0;
+// let b=1;
+
+// console.log(x++ && y++)
+// console.log(x)
+// console.log(y)
+
+// let x = 0;
+// let y = 0;
+// console.log(x++ || y++)
+// console.log(x)
+// console.log(y)
+// console.log("---------")
+
+// let a=0;
+// let b=1;
+
+// console.log(x++ || y++)
+// console.log(x)
+// console.log(y)
+
+// let x = true;
+// console.log(x)
+// x &&= false    // a= a || x
+// console.log(x)
+
+// let y = false;
+// console.log(x)
+// x ||= true  // a= a || x
+// console.log(x)
+
+// let greeting = "hello"
+// console.log(greeting +"","Alice")
+// let sentence = "Happy new year"
+// let newsentence = sentence + 2026
+// console.log(newsentence)
+// console.log(typeof newsentence)
+
+let sentence = "Happy new"
+sentence += "year"
+sentence += 2026
+console.log(sentence)
+
