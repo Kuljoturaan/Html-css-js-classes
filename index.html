@@ -3,8 +3,8 @@
 
 <head>
     <title>Page Title - Kuljot singh</title>
-    <link rel="icon" type="image/x-icon" href="image/favicon/favicon.ico"/>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="icon" type="image/x-icon" href="image/favicon/favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
     <!-- <style>
         p {
             background-color: aqua;
@@ -14,6 +14,30 @@
         }
 
     </style> -->
+
+    <script>
+        console.log("this is first line of js ")
+
+        function myfunction() {
+            console.log("Hello world is clicked and country India")
+        }
+        function confirmDialog() {
+            let decision = window.confirm("It is ok again")
+            console.log(decision)
+        }
+        function comfirmDialog1() {
+            let remove = confirm("Remove all data")
+            let message = remove ? "Deleted data" : "cancelled"
+            console.log(message)
+        }
+        function promptDialogExample() {
+            let name = window.prompt("What is your name","Kuljot")
+            name = name ? name : "anonymous"
+            let age = prompt("Hello " + name + ", how old are you")
+            alert(name + "is" + age + "years old")
+
+        }
+    </script>
 </head>
 
 <body>
@@ -48,7 +72,7 @@
     </div>
 
     <p id="kuljotPara"> ocean is the poem.
-        
+
 
     </p>
     <p class="kuljotPclass"> ocean is the poem.
@@ -203,7 +227,7 @@
 
 
 
-    <!-- <address> 103,<br>
+        <!-- <address> 103,<br>
         Arerea colony ,<br>
         ganesh mandir road,<br>
         bhopal
@@ -215,24 +239,31 @@
         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections
         1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
         form, accompanied by English versions from the 1914 translation by H. Rackham.
-    </p>
-    Contrary to popular belief, Lorem Ipsum is not s
-    <blockquote cite=""><i>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-        classical Latin
-            Hampden-Sydney
-            College in Virginia,
+        </p>
+        Contrary to popular belief, Lorem Ipsum is not s
+        <blockquote cite=""><i>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of
+                classical Latin
+                Hampden-Sydney
+                College in Virginia,
             </i>
-    </blockquote>
-    College in Virginia,
-    <q>written in 45 BC. This book is a treatise on the theory of ethics, very popular during the</q>
+        </blockquote>
+        College in Virginia,
+        <q>written in 45 BC. This book is a treatise on the theory of ethics, very popular during the</q>
 
-    <p id="try">The <abbr title="World health orgination">WHO</abbr></p>
+        <p id="try">The <abbr title="World health orgination">WHO</abbr></p>
 
-</div>
-<h2>London</h2>
-<h3>Brome</h3>
-<script src="./Assignment/Module-2-Assignment-1.js"></script>
-<script src="./Assignment/Module-2Assignment-2.js"></script>
+
+    </div>
+    <h2>London</h2>
+    <h3>Brome</h3>
+    <script src="./Assignment/Module-2-Assignment-1.js"></script>
+    <script src="./Assignment/Module-2Assignment-2.js"></script>
+    <button onclick="myfunction()">My button</button>
+    <button onclick="confirmDialog()">My Dialog button</button>
+    <button onclick="comfirmDialog1()">My Dialog1 button</button>
+    <button onclick="promptDialogExample()">My dialog user details</button>
+
     <br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
