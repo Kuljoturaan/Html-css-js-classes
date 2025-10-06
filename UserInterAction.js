@@ -59,25 +59,40 @@
 //         }
 
 
-//         let userAge = prompt("Enter user age", 0)
-//         hasParentApporval = true
-//         cartValue = prompt("cart value", 250)
-//         let points = 400
-//         let addInsurance = true
-//         let hasPromoCode = false
-//         let Insurance_Cost = 5
+let userAge = prompt("Enter your age ", 0)
+hasParentsApproval = true
+hasPromoCode = false
+let cartValue = 280
+let points = 500
+let INSURANCE_COST = 20
+let orderIsValid = true
+let addInsurance = true
+let shippingCost = 50
 
-//         let orderInvalid = true
-//         let shippingCost = 20
+// 1st condition hasParentsApproval = false
+if (userAge < 21 && !hasParentsApproval) {
+    hasParentsApproval = false
+    alert("Order is Invalid")
+// 2nd condition hasParentsApproval = true
+} else if (userAge < 21 && hasParentsApproval) {
+    hasParentsApproval = true
+    shippingCost -= 5
+    alert("Order is Valid")
+// 3rd senior citizen user 
+} else if (userAge >= 65) {
+    shippingCost = 0
+     alert("Senior citizen — Free shipping")
+// 4th user is adult  
+} else if (userAge >= 21 && userAge <= 64 && (hasParentsApproval || cartValue > 300 || points > 500)) {
+    shippingCost = 0
+    alert("Adult user — Free shipping ")
+}
 
-//         if (userAge < 21 && !hasParentApporval) {
-//             hasParentApporval = false
-//             alert("user is invalid ")
-//         } else if (userAge < 21 && hasParentApporval) {
-//             shippingCost -= 5
-//         } else if (userAge >= 65) {
-//             shippingCost = 0
-//         }
+if(addInsurance && orderIsValid && !hasPromoCode) {
+    shippingCost+=INSURANCE_COST
+    alert("Insurance added ")
+}
+alert(`Order Valid: ${orderIsValid}\nShipping Cost: ₹${shippingCost}`);
 
 //         let num = prompt("Please enter your number ")
 //         if (num % 2 === 0) {
@@ -104,36 +119,36 @@
 
 //         alert(`you are ${quantity} ${totalPrice}`)
 
-        let age = parseInt(prompt("Please enter your age"))
-        let gender = prompt("please enter your gender,Male/Female").toLowerCase().trim()
+// let age = parseInt(prompt("Please enter your age"))
+// let gender = prompt("please enter your gender,Male/Female").toLowerCase().trim()
 
-        let oldLawsAge, newLawsAge
+// let oldLawsAge, newLawsAge
 
-        if (gender === "male") {
-            oldLawsAge = 21
-            newLawsAge = 18
-        } else if (gender === "female") {
-            oldLawsAge = 18
-            newLawsAge = 18
-        }
-        else {
-            alert("Please enter your correct gender (Male/Female)")
-        }
+// if (gender === "male") {
+//     oldLawsAge = 21
+//     newLawsAge = 18
+// } else if (gender === "female") {
+//     oldLawsAge = 18
+//     newLawsAge = 18
+// }
+// else {
+//     alert("Please enter your correct gender (Male/Female)")
+// }
 
-        if (age >= oldLawsAge) {
-            alert("old laws you can also married")
-        }
-        else {
-            alert ("old laws you cannot married")
-        }
+// if (age >= oldLawsAge) {
+//     alert("old laws you can also married")
+// }
+// else {
+//     alert ("old laws you cannot married")
+// }
 
 
-        if (age >= newLawsAge) {
-            alert("new laws you can also married")
-        }
-        else {
-            alert ("new laws you can not married")
-        }
+// if (age >= newLawsAge) {
+//     alert("new laws you can also married")
+// }
+// else {
+//     alert ("new laws you can not married")
+// }
 
 //         let num = prompt("please enter your marks ", 0)
 //         let grade = Number(num)
