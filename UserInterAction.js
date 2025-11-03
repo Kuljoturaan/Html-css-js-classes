@@ -683,12 +683,50 @@ function operation(func, first, second) {
 //     return n > 1 ? n * factroial(n - 1) : 1
 // }
 
-function factroial(n) {
-    let result = 1;
-    while (n > 1) {
-        result *= n
-        n--;
-    }
-    return result
+// function factroial(n) {
+//     let result = 1;
+//     while (n > 1) {
+//         result *= n
+//         n--;
+//     }
+//     return result
+// }
+// console.log(factroial(5))
+
+// let count = 1
+// let intervalID = setInterval(() => {
+//     console.log(count++)
+// }, 1000);
+// setTimeout(() => {
+//     clearInterval(intervalID)
+// }, (10 * 1000) + 100)
+
+// try {
+//     console.log("Starting try")
+//     let a = 10
+//     console.lg(a/0)
+//     console.log("Ending of try")
+// } catch (error) {
+//     console.log("Starting catch")
+//     console.log("error:",error)
+//     console.log("Ending of catch")
+
+// }
+const numOffArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let startingNum = 0
+
+for (let num = 0; num < numOffArr.length; num++) {
+    let intervalID = setInterval(() => {
+        console.log(numOffArr[startingNum])
+        startingNum++;
+
+        if(startingNum>=numOffArr.length){
+            clearInterval(intervalID)
+            console.log("Array ended")
+        }
+    },1000);
+    setTimeout(() => {
+        clearInterval(intervalID)
+        console.log("set interval ended after 12 sec")
+    }, 12000);
 }
-console.log(factroial(5))
