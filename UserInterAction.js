@@ -712,21 +712,539 @@ function operation(func, first, second) {
 //     console.log("Ending of catch")
 
 // }
-const numOffArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let startingNum = 0
+// const numOffArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let startingNum = 0
 
-for (let num = 0; num < numOffArr.length; num++) {
-    let intervalID = setInterval(() => {
-        console.log(numOffArr[startingNum])
-        startingNum++;
+// for (let num = 0; num < numOffArr.length; num++) {
+//     let intervalID = setInterval(() => {
+//         console.log(numOffArr[startingNum])
+//         startingNum++;
 
-        if(startingNum>=numOffArr.length){
-            clearInterval(intervalID)
-            console.log("Array ended")
-        }
-    },1000);
-    setTimeout(() => {
-        clearInterval(intervalID)
-        console.log("set interval ended after 12 sec")
-    }, 12000);
+//         if(startingNum>=numOffArr.length){
+//             clearInterval(intervalID)
+//             console.log("Array ended")
+//         }
+//     },1000);
+//     setTimeout(() => {
+//         clearInterval(intervalID)
+//         console.log("set interval ended after 12 sec")
+//     }, 12000);
+// }
+
+// let array =1 // [1,2,3,4,5,6,7,8]
+// if(array instanceof Array) {
+//     console.log("Yes,we got the array")
+// }
+// else{
+//     console.log("Error:we not an Array")
+// }
+// let a = -2
+// try {
+//     a = b;
+// }
+// finally {
+//     console.log("Finally :",a)
+// }
+// catch (error) {
+//     if (error instanceof ReferenceError) {
+//         console.log("Reference error,reset a to -2")
+//         a = -2
+//     }
+//     else {
+//         console.log("Other error -" + error)
+//     }
+// }
+//console.log("Outside :",a)
+// let a= 10
+// try {
+//     a=b
+// } catch (error) {
+//     console.log("Error",error)
+
+// }finally{
+//     console.log("Finally",a)
+// }
+// console.log("Outside", a)
+// let a= 10
+// try {
+//     a = b
+// } catch (error) {
+//     try {
+//         console.log(b)
+//     } catch (error2) {
+//         console.log("Second catch",error2)
+
+//     }
+
+// }
+// finally{
+//     console.log("Finally!!")
+// }
+// console.log("start")
+// throw 100;
+// console.log("ended")
+// console.log("start")
+// throw ReferenceError("This is my custom reference error");
+// console.log("ended")
+
+// console.log("start")
+
+// try {
+//     throw 100
+
+// } catch (error) {
+//     console.log(error)
+// }
+// console.log("end")
+// 	let end = 2;
+// for(let i=1; i<end; i++) 
+// {
+//   console.log(i);
+// }
+
+// let counter = 0
+// let maxValue = 10
+// let result = 1
+// // debugger;
+// for(counter =0;counter<maxValue;counter++) {
+//     console.log(result)
+//     result *=maxValue-counter-1
+// }
+// console.log("Final Result",result)
+
+
+// let contact = {}
+// console.log("Contact :",contact)
+// console.log(typeof contact)
+// contact.tel = "207-507-5412"
+// console.log(contact)
+// console.log(contact.tel)
+// console.log("Contact :",contact)
+// console.log(typeof contact)
+
+// contact["*code"] = 123
+// console.log(contact["*code"])
+
+// contact["email.work"] = "abc@gmail.com"
+// contact["email.personal"] = "def@gmail.com"
+
+// console.log(contact["email.work"])
+// console.log(contact["email.personal"])
+
+// contact.first name = "Kuljot"
+// contact["first name"] = "Kuljot"
+// console.log(contact["first name"])
+
+// let contact = {
+//     email_1: "Ronald@gmail.com",
+//     email_2: "sahil@gmail.com"
+// }
+// for(i=1; i<=2; i++) {
+//     let key = "email_" + i
+//     console.log(key)
+//     console.log(contact[key])
+// }
+
+// let contact = {}
+// let email = prompt("Enter your email...")
+// let count = 1
+// while (email) {
+//     contact["email", +count] = email
+//     count++
+//     email = prompt("Enter your email")
+// }
+// console.log("Contact :" ,contact)
+
+// for(let count1 =1; count1<=Object.keys(contact).length; count1++) {
+//     console.log(contact["email_"+count1])
+// }
+
+// let test = {
+//     nr: 10,
+//     b: false,
+//     str: "Sumit",
+//     arr: [50, 60, 70],
+//     obj: {
+//         x: 10,
+//         y: 20
+//     },
+//     fn: function (arg) { console.log(arg) }
+// }
+// test.fn(123)
+// console.log("1 index",test.arr[1])
+// console.log("Y from obj of object",test.obj.y)
+// console.log("string of object:",test.str)
+// console.log("Number of obj :",test.nr)
+// console.log("Boolean of obj :",test.b)
+
+// let point = {
+//     x: 0,
+//     y: 0,
+//     moveHorizontally: function (distance) {
+//         this.x = this.x + distance;
+//     },
+//     moveVertically: function (distance) {
+//         this.y = this.y + distance;
+//     }
+// }
+// console.log(point.x)
+// point.moveHorizontally(30)
+// console.log(point.x)
+
+// let contact = {
+//     tel :987-654-321,
+//     email:"Ksr@gmail.com"
+// }
+// console.log("tel :",contact.tel)//12
+// console.log("email :",contact.email)//Ksr@gmail.com
+// contact.email = ["Ksr@gmail.com","rsumbhi@gmail.com"]
+// console.log("email :",contact.email[0])//Ksr@gmail.com
+// console.log("email :",contact.email[1])//rsumbhi@gmail.com
+// contact.email = {
+//     private:"Ksr@gmail.com",
+//     work:"rsumbhi@gmail.com"
+// }
+// console.log("Private email :",contact.email.private)//Ksr@gmail.com
+// console.log("Work email :",contact.email.work)//rsumbhi@gmail.com
+
+// // delete contact.email.work 
+// console.log("Work email :",contact.email.work)
+// console.log("Private email :",contact.email.private)
+// if(contact.email.work) {
+//     console.log("This is execute or not")
+// }
+// if("private" in contact.email) {
+//     console.log("This is private email",contact.email.private)
+// }
+
+// const contact = {
+//     tel: "123-459-789",
+//     email: "ronakr@gmail.com"
+// }
+// for (x in contact)
+//     console.log(x)
+// console.log(x + ":" + contact[x]);
+
+// let propArray = Object.keys(contact)
+// console.log("props array :", propArray)
+
+// contact = {
+//      tel : "123-459-789",
+//     email:"ronakr@gmail.com"
+// }
+// contact.tel = "9876543210"
+// console.log("contact tel :",contact.tel)
+// contact.name = "Kuljot singh"
+// console.log("contact name :",contact.name)
+
+// var point1 = { x: 10, y: 20 }
+// var point2 = { x: 10, y: 20 }
+// console.log(point1 === point2) 
+// let point3 = point1
+// console.log(point1 === point3)
+// point1.x =30
+// console.log("point1.x" === point1.x) 
+// console.log("point1.x" === point1.x) 
+
+// let point0 = { x: 10, y: 20 }
+// let point1 = point0
+// let point2 = {}
+// Object.assign(point2, point0)
+// console.log(point2.x);
+// console.log(point2.y);
+
+// point1.x = 30
+// point1.y = 50
+// console.log("point1.x", point1.x);
+// console.log("point1.y", point1.y);
+// console.log("point2.x", point2.x);
+// console.log("point2.y", point2.y);
+
+// console.log(point1 === point0)
+// console.log(point1 === 2)
+
+// let point3 = {}
+// Object.assign(point3, point0, { z: 100 })
+// console.log(point3.x)
+// console.log(point3.y)
+// console.log(point3.z)
+// console.log("Point:3", point3)
+
+// let point4 = {}
+// Object.assign(point4, point3, { z: 120 })
+// console.log("Point:4", point4)
+
+// let point5 = {}
+// point5 = { ...point4 }
+// console.log("Point:5", point5)
+// console.log("Point5 === point4", point5 === point4)
+
+// const arr1 = [1, 2]
+// const arr2 = [3, 4]
+// const combinedArray = [...arr1, ...arr2]
+// console.log("arr1", arr1)
+// console.log("arr2", arr2)
+// console.log("combinedArray", combinedArray)
+
+// let array1 = [1, 2, 3, 4]
+// const resultArray = [...array1]
+// console.log("array1 :", array1)
+// console.log("resultArray :", resultArray)
+
+// let resultArray1 = [...array1, 5, 6, 7, 8]
+// console.log("resultArray1 :", resultArray1)
+
+// resultArray1 = [5, 6, 7, 8, ...array1]
+// console.log("resultArray1 :", resultArray1)
+
+// resultArray1 = [5, 6, ...array1, 7, 8]
+// console.log("resultArray1 :", resultArray1)
+
+// function sum(a, b, c) {
+//     return a + b + c
+// }
+// let number = [20,20,20]
+// const result12 = sum (...number)
+// console.log("result12",result12)
+
+// const string1 = "Kuljot"
+// let charArray = [...string1]
+// console.log("charArray",charArray)
+
+// let deepClone = function (obj) {
+//     let newObj = { ...obj }
+//     for (property in newObj) {
+//         if (typeof newObj[property] === "object") {
+//             newObj[property] = deepClone(newObj[property])
+//         }
+//     }
+//     return newObj
+// }
+// let obj = {
+//     x: 10,
+//     y: 20,
+//     z:
+//     {
+//         a: 100,
+//         b: 200
+//     }
+// }
+// let obj1 = {}
+// Object.assign(obj1,obj)
+// obj1 = (...obj)
+// obj1 = deepClone(obj)
+// console.log("obj",obj)
+// console.log("obj1",obj1)
+// console.log("obj === obj1",obj === obj1)
+
+// obj.z.a = 150
+// obj.x = 15
+
+// console.log("Changing obj .z.a to 150")
+// console.log("Changing obj .z.a to 15")
+// console.log("obj",obj)
+// console.log("obj1",obj1)
+
+
+// let circle = {
+// radius: 100,
+// center: {
+//     x: 0,
+//     y: 0
+// },
+// // getType: function () {
+//     return "circle"
+// }
+// getType() {
+// return "circle"
+// return (typeof this.radius === "number") ? "circle" : "unknown"
+
+//     },
+//     getRadius () {
+//         return this.radius
+//     }
+// };
+
+// console.log("circle.radius :", circle.radius)
+// console.log("circle.center.x :", circle.center.x)
+// console.log("circle.getType() :", circle.getType())
+// console.log("circle.getType() :", circle["getType"]())
+
+// let circle1 = {...circle}
+// circle1.radius ="abc"
+// console.log("getRadius() :", circle1.getRadius())
+// console.log("getType() :", circle1.getType())
+
+
+// class Student {
+//     name
+//     age
+//     gender
+//     rollNumber
+
+// constructor() {
+//     console.log("This is a constructor called")
+// }//Default constructor
+
+//     constructor(name, age, gender, rollNumber) {
+//         console.log("This is a constructor called")
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//         this.rollNumber = rollNumber
+
+//     }
+//     printStudent() {
+//         console.log("Name :", kuljot.name)
+//         console.log("Age :", kuljot.age)
+//         console.log("Gender :", kuljot.gender)
+//         console.log("Roll number :", kuljot.rollNumber)
+//     }
+// }
+
+// console.log("Creating new object")
+// let kuljot = new Student("Kuljot", 25, "Male", 105)
+// console.log("created the object")
+// kuljot.name = "Kuljot singh"
+// kuljot.age = 20
+// kuljot.gender = "MALE"
+// kuljot.rollNumber  = 123
+
+// console.log("Name :",kuljot.name)
+// console.log("Age :",kuljot.age)
+// console.log("Gender :",kuljot.gender)
+// console.log("Roll number :",kuljot.rollNumber)
+// kuljot.printStudent()
+
+// let kul = new Student("Kuljot ksr", 21,"Male",121)
+// kul.printStudent()
+
+
+// class Vechicle {
+//     transportMode
+//     weight
+//     capacity
+//     color
+
+//     print() {
+//         console.log("transportMode :", this.transportMode)
+//         console.log("weight :", this.weight)
+//         console.log("capacity :", this.capacity)
+//         console.log("color :", this.color)
+//     }
+// }
+
+// class MotorBike extends Vechicle {
+//     maxSpeed
+//     fuelType
+//     peopleCapacity
+//     average
+
+//     print() {
+//         // super.print()
+//         console.log("maxSpeed: ", this.maxSpeed)
+//         console.log("fuelType: ", this.fuelType)
+//         console.log("peopleCapacity: ", this.peopleCapacity)
+//         console.log("average: ", this.average)
+//     }
+// }
+// class Car extends Vechicle {
+//     maxSpeed
+//     fuelType
+//     peopleCapacity
+//     average
+//     gears
+//     canReverse
+
+//     print() {
+//         // super.print() 
+//         console.log("maxSpeed :",this.maxSpeed)
+//         console.log("fuelType :",this.fuelType)
+//         console.log("peopleCapacity :",this.peopleCapacity)
+//         console.log("average :",this.average)
+//         console.log("gears :",this.gears)
+//         console.log("canReverse :",this.canReverse)
+//     }
+// }
+// let honda  = new Car () 
+// honda.transportMode = "Road"
+// honda.weight = "150 Kgs"
+// honda.capacity = "2.51 L"
+// honda.color = "yellow"
+// honda.maxSpeed = "220 kmps"
+// honda.fuelType = "Diesel"
+// honda.peopleCapacity = "6"
+// honda.average = "18 kmpl"
+// honda.gears = "5"
+// honda.canReverse = true
+
+// honda.print()
+// console.log("------------")
+
+// let motorBike = new MotorBike()
+// motorBike.transportMode = "Road"
+// motorBike.weight = "100 kgs"
+// motorBike.capacity = "1.51 "
+// motorBike.color = "Red"
+// motorBike.maxSpeed = "150 Kmps"
+// motorBike.fuelType = "Petrol"
+// motorBike.peopleCapacity = 2
+// motorBike.average = "50KMPL"
+
+// motorBike.print()
+
+
+// class Test {
+//     name
+//     description
+//     marking
+//     rank
+// }
+// let physicsTest = new Test()
+// physicsTest.name = "Physics test"
+// physicsTest.description=  "dsfvdlsdsfof   fsdnlcdsfd  fsdnkjdsf"
+// physicsTest.marking = "50"
+// physicsTest.rank=100
+
+// console.log("physicsTest",physicsTest)
+// let {name,marking,rank} =  physicsTest
+// console.log("name",name)
+// console.log("marking",marking)
+// console.log("rank",rank)
+
+// let Vehicle = function(id, latitude, longitude) 
+// {
+//     this.setPosition = function(latitude, longitude) {
+//         this.time = Date.now();
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     this.id = id
+//     this.status = "unavailable"
+//     this.setPosition = (latitude, longitude)
+// }
+
+let Vehicle = function(intialData)
+{
+    let { id, lattitude, longitude } = intialData //distructor or dismantle
+    this.setPosition = function(lattitude, longitude)
+    {
+        this.time = Date.now();
+        this.longitude = longitude
+        this.lattitude = lattitude
+    }
+    this.getPosition = function()
+    {
+        return { lattitude: this.lattitude, longitude:this.longitude}
+    }
+    this.id = id
+    this.status = "unavailable"
+    this.setPosition(lattitude, longitude)
 }
+let car = new Vehicle({id:"XE9", lattitude: 12.90909095, longitude: 24.9797979})
+console.log("car", car);
+console.log("lat long : ", car.getPosition());
+let {lattitude, longitude} = car.getPosition()
+console.log("lattitude", lattitude);
+console.log("longitude", longitude);
+
