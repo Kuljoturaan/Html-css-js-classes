@@ -1224,27 +1224,133 @@ function operation(func, first, second) {
 //     this.setPosition = (latitude, longitude)
 // }
 
-let Vehicle = function(intialData)
-{
-    let { id, lattitude, longitude } = intialData //distructor or dismantle
-    this.setPosition = function(lattitude, longitude)
-    {
-        this.time = Date.now();
-        this.longitude = longitude
-        this.lattitude = lattitude
-    }
-    this.getPosition = function()
-    {
-        return { lattitude: this.lattitude, longitude:this.longitude}
-    }
-    this.id = id
-    this.status = "unavailable"
-    this.setPosition(lattitude, longitude)
-}
-let car = new Vehicle({id:"XE9", lattitude: 12.90909095, longitude: 24.9797979})
-console.log("car", car);
-console.log("lat long : ", car.getPosition());
-let {lattitude, longitude} = car.getPosition()
-console.log("lattitude", lattitude);
-console.log("longitude", longitude);
+// let Vehicle = function(intialData)
+// {
+//     let { id, lattitude, longitude } = intialData //distructor or dismantle
+//     this.setPosition = function(lattitude, longitude)
+//     {
+//         this.time = Date.now();
+//         this.longitude = longitude
+//         this.lattitude = lattitude
+//     }
+//     this.getPosition = function()
+//     {
+//         return { lattitude: this.lattitude, longitude:this.longitude}
+//     }
+//     this.id = id
+//     this.status = "unavailable"
+//     this.setPosition(lattitude, longitude)
+// }
+// let car = new Vehicle({id:"XE9", lattitude: 12.90909095, longitude: 24.9797979})
+// console.log("car", car);
+// console.log("lat long : ", car.getPosition());
+// let {lattitude, longitude} = car.getPosition()
+// console.log("lattitude", lattitude);
+// console.log("longitude", longitude);
 
+// let AlmostEmptyClass = class {
+//     constructor(sth)
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() {
+//         console.log("Hii")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) //120
+// almostEmptyObject.sayHi() //hii
+
+// console.log("AlmostEmptyObject instanceof AlmostEmptyClass :",almostEmptyObject instanceof AlmostEmptyClass)
+// console.log("AlmostEmptyObject instanceof String :",almostEmptyObject instanceof String)
+// let str = new String("test me")
+// console.log("Str instanceof String :" , str instanceof String)
+
+// class ABC {
+//     a
+// }
+// class DEF extends ABC {
+//     b
+// }
+// class GHI extends DEF {
+//     c
+// }
+
+// let abc = new ABC()
+// let def = new DEF()
+// let ghi = new GHI()
+
+// console.log("abc instanceof ABC :",abc instanceof ABC )
+// console.log("def instanceof DEF :",def instanceof DEF )
+// console.log("ghi instanceof GHI :",ghi instanceof GHI )
+
+// console.log("ghi instanceof DEF :",ghi instanceof DEF)
+// console.log("ghi instanceof ABC :",ghi instanceof ABC)
+// console.log("ghi instanceof Object :",ghi instanceof Object)
+
+
+// console.log("def instanceof GHI :",def instanceof GHI)
+
+// let myObject = {
+//     a: 1,
+//     b:2,
+//     c:"C"
+// }
+
+// console.log("myObject :",myObject.a)
+// console.log("a :",myObject.a)
+// console.log("b :",myObject.b)
+// console.log("c :",myObject.c)
+
+// let {a,c} = myObject
+// console.log("a :",a)
+// // console.log("b :",b)
+// console.log("c :",c)
+class Vechicle {
+    constructor({ id, latitude, longtitude }) {
+        this.id = id
+        this.position = { latitude, longtitude }
+        this.status = "unavailable"
+    }
+    set position({ latitude, longtitude }) {
+        console.log("The position values!")
+        this.time = Date.now()
+        this.longtitude = longtitude
+        this.latitude = latitude
+    }
+    get position() {
+        console.log("getting position now !")
+        return {
+            latitude: this.latitude,
+            longtitude: this.longtitude
+        }
+    }
+    print() {
+        console.log("id:", this.id)
+        console.log("position:", this.position)
+        console.log("Time:", this.time)
+    }
+}
+
+let vechicle = new Vechicle({ longtitude: 18.213423, latitude: 59.367628, id: "AL1024" })
+vechicle.position = { longtitude: 18.193121, latitude: 59.378654 }
+
+console.log(vechicle.position)
+
+console.log("-----------")
+vechicle.print()
+
+class Car extends Vechicle {
+    constructor({ color, gears, id, latitude, longtitude }) {
+        super({id,latitude,longtitude})
+        this.color = color
+        this.gears = gears
+    }
+    print() {
+        super.print() //shadoing
+        console.log("color:",this.color)
+        console.log("gears:",this.gears)
+    }
+}
+console.log("==========")
+let toyota = new Car ({color:"Black",gears:6,id:"ABC",latitude:54.235896 ,longtitude:57.235896})
+toyota.print();
