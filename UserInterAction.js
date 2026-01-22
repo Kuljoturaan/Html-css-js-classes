@@ -1305,52 +1305,262 @@ function operation(func, first, second) {
 // console.log("a :",a)
 // // console.log("b :",b)
 // console.log("c :",c)
-class Vechicle {
-    constructor({ id, latitude, longtitude }) {
-        this.id = id
-        this.position = { latitude, longtitude }
-        this.status = "unavailable"
-    }
-    set position({ latitude, longtitude }) {
-        console.log("The position values!")
-        this.time = Date.now()
-        this.longtitude = longtitude
-        this.latitude = latitude
-    }
-    get position() {
-        console.log("getting position now !")
-        return {
-            latitude: this.latitude,
-            longtitude: this.longtitude
-        }
-    }
-    print() {
-        console.log("id:", this.id)
-        console.log("position:", this.position)
-        console.log("Time:", this.time)
-    }
+// class Vechicle {
+//     id
+//     position
+//     status
+//     time
+//     #latitude
+//     #longtitude
+//     constructor({ id, latitude, longtitude }) {
+//         this.id = id
+//         this.position = { latitude, longtitude }
+//         this.status = "unavailable"
+//     }
+//     set position({ latitude, longtitude }) {
+//         console.log("The position values!")
+//         this.time = Date.now()
+//         this.#longtitude = longtitude
+//         this.#latitude = latitude
+//     }
+//     get position() {
+//         console.log("getting position now !")
+//         return {
+//             latitude: this.latitude,
+//             longtitude: this.longtitude
+//         }
+//     }
+//     print() {
+//         console.log("id:", this.id)
+//         console.log("position:", this.position)
+//         console.log("Time:", this.time)
+//     }
+// }
+
+// let vechicle = new Vechicle({ longtitude: 18.213423, latitude: 59.367628, id: "AL1024" })
+// vechicle.position = { longtitude: 18.193121, latitude: 59.378654 }
+
+// console.log(vechicle.position)
+
+// console.log("-----------")
+// vechicle.print()
+
+// class Car extends Vechicle {
+//     // id
+//     // position
+//     // status
+//     // time
+//     // #latitude
+//     // #longitude
+//     constructor({ color, gears, id, latitude, longtitude }) {
+//         super({ id, latitude, longtitude })
+//         this.color = color
+//         this.gears = gears
+//     }
+//     print() {
+//         super.print() //shadoing
+//         console.log("color:", this.color)
+//         console.log("gears:", this.gears)
+//     }
+// }
+// console.log("==========")
+// let toyota = new Car({ color: "Black", gears: 6, id: "ABC", latitude: 54.235896, longtitude: 57.235896 })
+// toyota.print();
+
+// let AlmostEmpty = function(sth) {
+//     console.log(sth)
+//     this.sayHi = function(){
+//         console.log("Hi!")
+//     }
+// }
+// class ExtendedClass extends AlmostEmpty {
+//     constructor(name){
+//         super("I 'm super")
+//         this.name = name
+//     }
+//     sayHi() {
+//         console.log(`Hi ${this.name}!`)
+//     }
+// }
+// let obj = new ExtendedClass("Bob")
+// obj.sayHi(); // -> Hii bob!
+
+// class AlmostEmptyClass {
+//     constructor(sth) {
+//         console.log(sth)
+//     }
+//     sayHi() {
+//         console.log("Hi!")
+//     }
+//     static sayHello () {
+//         console.log("Hello !")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // 120
+// almostEmptyObject.sayHi() //Hi!
+// // almostEmptyObject.sayHello() //error
+// AlmostEmptyClass.sayHello() //Hello !
+
+
+// class AlmostEmptyClass 
+// {
+//     constructor(sth) 
+//     {
+//         console.log(sth)
+//     }
+//     sayHi() 
+//     {
+//         console.log("Hi!")
+//     }
+//     static sayHello() 
+//     {
+//         console.log("Hello!")
+//     }
+// }
+// let almostEmptyObject = new AlmostEmptyClass(120) // 120
+// almostEmptyObject.sayHi() // -> Hi!
+// //almostEmptyObject.sayHello() // error
+// AlmostEmptyClass.sayHello() // -> Hello!
+
+
+// class Vehicle 
+// {
+//     constructor({id, latitude, longitude})
+//     {
+//         this.id = id
+//         this.status = "unavailable"
+//         this.setPosition({latitude, longitude})
+//     }
+//     setPosition({latitude, longitude})
+//     {
+//         this.time = Date.now()
+//         this.longitude = longitude
+//         this.latitude = latitude
+//     }
+//     getPosition() 
+//     {
+//         return{
+//             latitude: this.latitude,
+//             longitude: this.longitude
+//         }
+//     }
+//     // static isSameId(v1, v2)
+//     // {
+//     //     return v1.id === v2.id
+//     // }
+
+//     static isSameLongitude(v1, v2)
+//     {
+//         return v1.longitude === v2.longitude
+//     }
+// }
+
+// Vehicle.isSameId =  function(v1, v2) 
+// {
+//     return v1.id === v2.id
+// }
+
+
+// let vehicle1 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
+// let vehicle2 = new Vehicle({longitude: 0, latitude: 0, id: "AL1024"})
+// let vehicle3 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1026"})
+// console.log("Vehicle.isSameId(vehicle1, vehicle2)", Vehicle.isSameId(vehicle1, vehicle2)) // -> true
+// console.log("Vehicle.isSameId(vehicle1, vehicle3)", Vehicle.isSameId(vehicle1, vehicle3)) // -> false
+// console.log("Vehicle.isSameLongitude(vehicle1, vehicle2)", Vehicle.isSameLongitude(vehicle1, vehicle2))
+// console.log("Vehicle.isSameLongitude(vehicle1, vehicle3)", Vehicle.isSameLongitude(vehicle1, vehicle3))
+
+
+
+// class TestClass {
+//     constructor(arg) {
+//         this.arg = arg
+//         console.log(this.arg)
+//     }
+//     showSth () {
+//         console.log("I Am prototype")
+//     }
+//     static showSth() {
+//         console.log(`Hi,I am static!`)
+//     }
+// }
+
+// let TestClass = function (arg) {
+//     this.arg = arg
+//     console.log(this.arg)
+// }
+// TestClass.prototype.showSth = function () {
+//     console.log("I am prototype")
+// }
+
+// TestClass.showSth = function () {
+//     console.log(`Hi, I am static`)
+// }
+// let test = new TestClass("Hello")
+// test.showSth();
+// TestClass.showSth()
+// console.log(test instanceof TestClass)
+
+// console.log(typeof NaN)
+
+// implicit conversion 
+
+// let bol = true;
+// console.log("Bol :",bol)
+// console.log("type of Bol :",typeof bol)
+
+// let strBool  = ""+bol
+// console.log("strBool :",strBool)
+// console.log("strBool type of:",typeof strBool)
+
+// let strBool1 = new  String("")  //Explecit conversion
+// console.log("strBool1 :",strBool1)
+// console.log("strBool1 typeof :",typeof strBool1)
+
+// let bool1 = new Boolean(0)
+// console.log("bool1",bool1)
+// console.log("typeof bool1",typeof boool1)
+
+// Number
+let nrStr1 = (11).toString()
+let nrStr2 = (11).toString(16)
+
+console.log(`nrstr1 : ${typeof nrStr1}: ${nrStr1}`)
+console.log(`nrstr2 : ${typeof nrStr2}: ${nrStr2}`)
+
+let nr1 = 10.55
+console.log(nr1.toFixed(1))
+console.log(nr1.toFixed(20))
+console.log(nr1.toFixed(3))
+
+let nr2 = 102.55
+console.log(nr2.toFixed(1))
+console.log(nr2.toFixed(20))
+console.log(((nr2*10).toFixed(0) / 10))
+
+
+let nr = 123456.789
+console.log(nr.toLocaleString("en-GB"))
+console.log(nr.toLocaleString("fr-FR"))
+console.log(nr.toLocaleString("de-DE"))
+console.log(nr.toLocaleString("ar-EG"))
+console.log(nr.toLocaleString("hi-IN"))
+console.log(nr.toLocaleString("sa-IN"))
+console.log(nr.toLocaleString("pu-IN"))
+console.log(nr.toLocaleString({
+    style:"currency",
+    currency:"EUR"
 }
+))
+console.log(nr.toLocaleString())
 
-let vechicle = new Vechicle({ longtitude: 18.213423, latitude: 59.367628, id: "AL1024" })
-vechicle.position = { longtitude: 18.193121, latitude: 59.378654 }
+console.log("Number.MAX_VALUE", Number.MAX_VALUE)
+console.log("Number.MIN_VALUE", Number.MIN_VALUE)
+console.log("Number.MAX_SAFE_INTEGER", Number.MAX_SAFE_INTEGER)
+console.log("Number.MIN_SAFE_INTEGER", Number.MIN_SAFE_INTEGER)
 
-console.log(vechicle.position)
-
-console.log("-----------")
-vechicle.print()
-
-class Car extends Vechicle {
-    constructor({ color, gears, id, latitude, longtitude }) {
-        super({id,latitude,longtitude})
-        this.color = color
-        this.gears = gears
-    }
-    print() {
-        super.print() //shadoing
-        console.log("color:",this.color)
-        console.log("gears:",this.gears)
-    }
+let numbers = [2e100,200000,1.5,Infinity]
+for(let i = 0; i<numbers.length; i++) {
+    console.log(`is ${numbers[i]} Integer: ${Number.isInteger(numbers[i])}`)
+    console.log(`is ${numbers[i]} Safe Integer: ${Number.isSafeInteger(numbers[i])}`)
+    console.log(`is ${numbers[i]} Finite number: ${Number.isFinite(numbers[i])}`)
 }
-console.log("==========")
-let toyota = new Car ({color:"Black",gears:6,id:"ABC",latitude:54.235896 ,longtitude:57.235896})
-toyota.print();
