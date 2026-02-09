@@ -58,7 +58,6 @@
 //             alert("you can not eligible for vote")
 //         }
 
-
 // let userAge = prompt("Enter your age ", 0)
 // hasParentsApproval = true
 // hasPromoCode = false
@@ -78,11 +77,11 @@
 //     hasParentsApproval = true
 //     shippingCost -= 5
 //     alert("Order is Valid")
-// // 3rd senior citizen user 
+// // 3rd senior citizen user
 // } else if (userAge >= 65) {
 //     shippingCost = 0
 //      alert("Senior citizen — Free shipping")
-// // 4th user is adult  
+// // 4th user is adult
 // } else if (userAge >= 21 && userAge <= 64 && (hasParentsApproval || cartValue > 300 || points > 500)) {
 //     shippingCost = 0
 //     alert("Adult user — Free shipping ")
@@ -142,7 +141,6 @@
 //     alert ("old laws you cannot married")
 // }
 
-
 // if (age >= newLawsAge) {
 //     alert("new laws you can also married")
 // }
@@ -166,8 +164,6 @@
 //         else if (grade < 60) {
 //             alert("Fail")
 //         }
-
-
 
 //         let sub1 = Number(prompt("Enter your first subject", 0))
 //         let sub2 = Number(prompt("Enter your second subject", 0))
@@ -275,13 +271,12 @@
 //     console.log("Num",num)
 //     num -=2
 // }
-// let isOver 
+// let isOver
 // let counter = 1
 // do{
 //     isOver = !confirm(`[${counter++}] continue the loop?]`)
 // }
 // while(!isOver)
-
 
 // let condition = false
 
@@ -360,7 +355,7 @@
 //     console.log(values[i]);
 // }
 
-// let values = [10,230,50,100] 
+// let values = [10,230,50,100]
 // let sum = 0
 
 // for(let number of values) {
@@ -434,7 +429,7 @@
 //     console.log(`mean ${meanTemp}`)
 // }
 
-// showName() 
+// showName()
 // function showName () {
 //     console.log(name)
 // }
@@ -444,7 +439,7 @@
 // function showName () {
 //     console.log(name)
 // }
-// showName() 
+// showName()
 
 // function sayHello () {
 //     console.log("Hello world")
@@ -565,7 +560,7 @@
 //     return a * b
 // }
 function operation(func, first, second) {
-    return func(first, second)
+  return func(first, second);
 }
 // console.log(operation(add, 10, 20))
 // console.log(operation(function (a, b) {
@@ -632,7 +627,7 @@ function operation(func, first, second) {
 // console.log(arr)
 // console.log(name)
 // let newArray = arr.map(function(element) {
-//     if(element === "Aditya") 
+//     if(element === "Aditya")
 //         return "Aditya Gupta"
 //         return element +"--"
 // })
@@ -641,7 +636,7 @@ function operation(func, first, second) {
 
 // let arr = [1,2,3,4,5,6,7,8,9,10]
 // let newArray = arr.map(function(element) {
-//     if(element === 5) 
+//     if(element === 5)
 //         return 5
 //         return element *5
 // })
@@ -797,7 +792,7 @@ function operation(func, first, second) {
 // }
 // console.log("end")
 // 	let end = 2;
-// for(let i=1; i<end; i++) 
+// for(let i=1; i<end; i++)
 // {
 //   console.log(i);
 // }
@@ -811,7 +806,6 @@ function operation(func, first, second) {
 //     result *=maxValue-counter-1
 // }
 // console.log("Final Result",result)
-
 
 // let contact = {}
 // console.log("Contact :",contact)
@@ -907,7 +901,7 @@ function operation(func, first, second) {
 // console.log("Private email :",contact.email.private)//Ksr@gmail.com
 // console.log("Work email :",contact.email.work)//rsumbhi@gmail.com
 
-// // delete contact.email.work 
+// // delete contact.email.work
 // console.log("Work email :",contact.email.work)
 // console.log("Private email :",contact.email.private)
 // if(contact.email.work) {
@@ -939,12 +933,12 @@ function operation(func, first, second) {
 
 // var point1 = { x: 10, y: 20 }
 // var point2 = { x: 10, y: 20 }
-// console.log(point1 === point2) 
+// console.log(point1 === point2)
 // let point3 = point1
 // console.log(point1 === point3)
 // point1.x =30
-// console.log("point1.x" === point1.x) 
-// console.log("point1.x" === point1.x) 
+// console.log("point1.x" === point1.x)
+// console.log("point1.x" === point1.x)
 
 // let point0 = { x: 10, y: 20 }
 // let point1 = point0
@@ -1045,7 +1039,6 @@ function operation(func, first, second) {
 // console.log("obj",obj)
 // console.log("obj1",obj1)
 
-
 // let circle = {
 // radius: 100,
 // center: {
@@ -1074,7 +1067,6 @@ function operation(func, first, second) {
 // circle1.radius ="abc"
 // console.log("getRadius() :", circle1.getRadius())
 // console.log("getType() :", circle1.getType())
-
 
 // class Student {
 //     name
@@ -1119,7 +1111,6 @@ function operation(func, first, second) {
 // let kul = new Student("Kuljot ksr", 21,"Male",121)
 // kul.printStudent()
 
-
 // class Vechicle {
 //     transportMode
 //     weight
@@ -1157,7 +1148,7 @@ function operation(func, first, second) {
 //     canReverse
 
 //     print() {
-//         // super.print() 
+//         // super.print()
 //         console.log("maxSpeed :",this.maxSpeed)
 //         console.log("fuelType :",this.fuelType)
 //         console.log("peopleCapacity :",this.peopleCapacity)
@@ -1166,7 +1157,7 @@ function operation(func, first, second) {
 //         console.log("canReverse :",this.canReverse)
 //     }
 // }
-// let honda  = new Car () 
+// let honda  = new Car ()
 // honda.transportMode = "Road"
 // honda.weight = "150 Kgs"
 // honda.capacity = "2.51 L"
@@ -1193,7 +1184,6 @@ function operation(func, first, second) {
 
 // motorBike.print()
 
-
 // class Test {
 //     name
 //     description
@@ -1212,7 +1202,7 @@ function operation(func, first, second) {
 // console.log("marking",marking)
 // console.log("rank",rank)
 
-// let Vehicle = function(id, latitude, longitude) 
+// let Vehicle = function(id, latitude, longitude)
 // {
 //     this.setPosition = function(latitude, longitude) {
 //         this.time = Date.now();
@@ -1286,7 +1276,6 @@ function operation(func, first, second) {
 // console.log("ghi instanceof DEF :",ghi instanceof DEF)
 // console.log("ghi instanceof ABC :",ghi instanceof ABC)
 // console.log("ghi instanceof Object :",ghi instanceof Object)
-
 
 // console.log("def instanceof GHI :",def instanceof GHI)
 
@@ -1401,18 +1390,17 @@ function operation(func, first, second) {
 // // almostEmptyObject.sayHello() //error
 // AlmostEmptyClass.sayHello() //Hello !
 
-
-// class AlmostEmptyClass 
+// class AlmostEmptyClass
 // {
-//     constructor(sth) 
+//     constructor(sth)
 //     {
 //         console.log(sth)
 //     }
-//     sayHi() 
+//     sayHi()
 //     {
 //         console.log("Hi!")
 //     }
-//     static sayHello() 
+//     static sayHello()
 //     {
 //         console.log("Hello!")
 //     }
@@ -1422,8 +1410,7 @@ function operation(func, first, second) {
 // //almostEmptyObject.sayHello() // error
 // AlmostEmptyClass.sayHello() // -> Hello!
 
-
-// class Vehicle 
+// class Vehicle
 // {
 //     constructor({id, latitude, longitude})
 //     {
@@ -1437,7 +1424,7 @@ function operation(func, first, second) {
 //         this.longitude = longitude
 //         this.latitude = latitude
 //     }
-//     getPosition() 
+//     getPosition()
 //     {
 //         return{
 //             latitude: this.latitude,
@@ -1455,11 +1442,10 @@ function operation(func, first, second) {
 //     }
 // }
 
-// Vehicle.isSameId =  function(v1, v2) 
+// Vehicle.isSameId =  function(v1, v2)
 // {
 //     return v1.id === v2.id
 // }
-
 
 // let vehicle1 = new Vehicle({longitude: 18.213423, latitude: 59.367628, id: "AL1024"})
 // let vehicle2 = new Vehicle({longitude: 0, latitude: 0, id: "AL1024"})
@@ -1468,8 +1454,6 @@ function operation(func, first, second) {
 // console.log("Vehicle.isSameId(vehicle1, vehicle3)", Vehicle.isSameId(vehicle1, vehicle3)) // -> false
 // console.log("Vehicle.isSameLongitude(vehicle1, vehicle2)", Vehicle.isSameLongitude(vehicle1, vehicle2))
 // console.log("Vehicle.isSameLongitude(vehicle1, vehicle3)", Vehicle.isSameLongitude(vehicle1, vehicle3))
-
-
 
 // class TestClass {
 //     constructor(arg) {
@@ -1502,7 +1486,7 @@ function operation(func, first, second) {
 
 // console.log(typeof NaN)
 
-// implicit conversion 
+// implicit conversion
 
 // let bol = true;
 // console.log("Bol :",bol)
@@ -1521,46 +1505,134 @@ function operation(func, first, second) {
 // console.log("typeof bool1",typeof boool1)
 
 // Number
-let nrStr1 = (11).toString()
-let nrStr2 = (11).toString(16)
+// let nrStr1 = (11).toString()
+// let nrStr2 = (11).toString(16)
 
-console.log(`nrstr1 : ${typeof nrStr1}: ${nrStr1}`)
-console.log(`nrstr2 : ${typeof nrStr2}: ${nrStr2}`)
+// console.log(`nrstr1 : ${typeof nrStr1}: ${nrStr1}`)
+// console.log(`nrstr2 : ${typeof nrStr2}: ${nrStr2}`)
 
-let nr1 = 10.55
-console.log(nr1.toFixed(1))
-console.log(nr1.toFixed(20))
-console.log(nr1.toFixed(3))
+// let nr1 = 10.55
+// console.log(nr1.toFixed(1))
+// console.log(nr1.toFixed(20))
+// console.log(nr1.toFixed(3))
 
-let nr2 = 102.55
-console.log(nr2.toFixed(1))
-console.log(nr2.toFixed(20))
-console.log(((nr2*10).toFixed(0) / 10))
+// let nr2 = 102.55
+// console.log(nr2.toFixed(1))
+// console.log(nr2.toFixed(20))
+// console.log(((nr2*10).toFixed(0) / 10))
 
+// let nr = 123456.789
+// console.log(nr.toLocaleString("en-GB"))
+// console.log(nr.toLocaleString("fr-FR"))
+// console.log(nr.toLocaleString("de-DE"))
+// console.log(nr.toLocaleString("ar-EG"))
+// console.log(nr.toLocaleString("hi-IN"))
+// console.log(nr.toLocaleString("sa-IN"))
+// console.log(nr.toLocaleString("pu-IN"))
+// console.log(nr.toLocaleString({
+//     style:"currency",
+//     currency:"EUR"
+// }
+// ))
+// console.log(nr.toLocaleString())
 
-let nr = 123456.789
-console.log(nr.toLocaleString("en-GB"))
-console.log(nr.toLocaleString("fr-FR"))
-console.log(nr.toLocaleString("de-DE"))
-console.log(nr.toLocaleString("ar-EG"))
-console.log(nr.toLocaleString("hi-IN"))
-console.log(nr.toLocaleString("sa-IN"))
-console.log(nr.toLocaleString("pu-IN"))
-console.log(nr.toLocaleString({
-    style:"currency",
-    currency:"EUR"
-}
-))
-console.log(nr.toLocaleString())
+// console.log("Number.MAX_VALUE", Number.MAX_VALUE)
+// console.log("Number.MIN_VALUE", Number.MIN_VALUE)
+// console.log("Number.MAX_SAFE_INTEGER", Number.MAX_SAFE_INTEGER)
+// console.log("Number.MIN_SAFE_INTEGER", Number.MIN_SAFE_INTEGER)
 
-console.log("Number.MAX_VALUE", Number.MAX_VALUE)
-console.log("Number.MIN_VALUE", Number.MIN_VALUE)
-console.log("Number.MAX_SAFE_INTEGER", Number.MAX_SAFE_INTEGER)
-console.log("Number.MIN_SAFE_INTEGER", Number.MIN_SAFE_INTEGER)
+// let numbers = [2e100,200000,1.5,Infinity]
+// for(let i = 0; i<numbers.length; i++) {
+//     console.log(`is ${numbers[i]} Integer: ${Number.isInteger(numbers[i])}`)
+//     console.log(`is ${numbers[i]} Safe Integer: ${Number.isSafeInteger(numbers[i])}`)
+//     console.log(`is ${numbers[i]} Finite number: ${Number.isFinite(numbers[i])}`)
+// }
 
-let numbers = [2e100,200000,1.5,Infinity]
-for(let i = 0; i<numbers.length; i++) {
-    console.log(`is ${numbers[i]} Integer: ${Number.isInteger(numbers[i])}`)
-    console.log(`is ${numbers[i]} Safe Integer: ${Number.isSafeInteger(numbers[i])}`)
-    console.log(`is ${numbers[i]} Finite number: ${Number.isFinite(numbers[i])}`)
-}
+// console.log(Number.parseFloat("123.12.12"))
+// console.log(Number("123.12.12"))
+// console.log(Number.parseInt("1204px"))
+// console.log(Number("1204px"))
+
+// let a = "this is my name : \"Kuljot singh\""
+
+// a = "this is my name : 'Kuljot singh rajpal'"
+// a = 'this is my name : "Ksr Ksr Ksr'
+// console.log(a)
+// console.log(a[0])
+// console.log(a[1])
+// console.log(a.charAt(2))
+// console.log(a.charAt(58))
+// console.log(a.toUpperCase())
+// console.log(a.toLowerCase())
+
+// console.log(a.length)
+// let ab = new String('this is my name : "ksr" ')
+// console.log(ab)
+// console.log(ab.length)
+
+// console.log(a.split(" "))
+// console.log(a.split(" ")[1])
+// console.log(a)
+// console.log(a.replace("Ksr","Aditya Sir"))
+// console.log(a.replaceAll("Ksr","Aditya Sir"))
+
+// let text = "Lorem, ipsum, dolor, ...."
+// let words = text.toLowerCase().replaceAll('.','').replaceAll(',','').split(' ')
+// console.log(words)
+// console.log(words.length)
+
+// const array = [1,2,'a',true]
+// const joinedString = array.join()
+// console.log(joinedString)
+// const customSeperator = array.join(' -')
+// console.log(customSeperator)
+// const noSeprator = array.join('')
+// console.log(noSeprator)
+
+// let array1 = [90, 80, 70, 60, 50, 40, "dog"];
+// let anyNumberPresent = array1.some((item) => typeof item === "number");
+// let anyNumberPresent = array1.some((item) => {
+//   if (typeof item === "number") {
+//     console.log("num")
+//     return true
+//   } else {
+//     console.log("other the sum")
+//     return false
+//   }
+// });
+// console.log("anyNumberPresent", anyNumberPresent);
+
+// let array2 = [90, 80, 70, 60, 50, 40, -1];
+// let allPositive = array2.every(item => item > 0);
+// console.log("allPositive:",allPositive)
+
+// every array and some method complete
+
+// let array3 = ["90", 80, 70, 60, 50, 40, "dog"]
+// console.log(array3.length)
+// console.log(array3)
+// let numbers = array3.filter(item => typeof item === "number")
+//     console.log(numbers.length)
+//     console.log(numbers)
+//     console.log(array3.length)
+
+let array3 = ["90", 80, 70, 60, 50, 40, "dog"];
+let squarePower = array3
+  .filter((item) => typeof item === "number")
+  .map((item) => item * item);
+console.log(squarePower);
+
+// built in function
+
+let array1 = ["90", 90, 70, 60, 50, 40, "dog"];
+let numbers = array1.filter((item) => typeof item === "number");
+console.log(numbers);
+numbers.sort((first, second) => {
+  if (first < second) {
+    return -1;
+  } else if (first === second) {
+    return 0;
+  } else {
+    return 1;
+  }
+});
