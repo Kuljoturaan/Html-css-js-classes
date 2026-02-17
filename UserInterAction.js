@@ -1616,23 +1616,182 @@ function operation(func, first, second) {
 //     console.log(numbers)
 //     console.log(array3.length)
 
-let array3 = ["90", 80, 70, 60, 50, 40, "dog"];
-let squarePower = array3
-  .filter((item) => typeof item === "number")
-  .map((item) => item * item);
-console.log(squarePower);
+// let array3 = ["90", 80, 70, 60, 50, 40, "dog"];
+// let squarePower = array3
+// .filter((item) => typeof item === "number")
+// .map((item) => item * item);
+// console.log(squarePower);
 
 // built in function
 
-let array1 = ["90", 90, 70, 60, 50, 40, "dog"];
-let numbers = array1.filter((item) => typeof item === "number");
-console.log(numbers);
-numbers.sort((first, second) => {
-  if (first < second) {
-    return -1;
-  } else if (first === second) {
-    return 0;
-  } else {
-    return 1;
-  }
-});
+// let array1 = ["90", 90, 70, 60, 50, 40, "dog"];
+// let numbers = array1.filter((item) => typeof item === "number");
+// console.log(numbers);
+// numbers.sort((first, second) => {
+//   if (first < second) {
+//     return -1;
+//   } else if (first === second) {
+//     return 0;
+//   } else {
+//     return 1;
+//   }
+// });
+
+let number = [10, 20, 30, 50, 80, 90, 100];
+// let sum = number.reduce((acc, item) => acc + item, 100);
+// console.log(number);
+// let strangeObj = number.reduce((acc, item, index) => {
+//   acc[item] = index;
+//   return acc;
+// }, {});
+
+// console.log(strangeObj);
+
+// console.log("number[0]:",number[0])
+// console.log("number[0]:",number)
+// number.reverse()
+// console.log("number[0]:",number[0])
+// console.log("number[0]:",number)
+// number.reverse()
+// console.log("number[0]:",number[0])
+// console.log("number[0]:",number)
+
+// let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"];
+// myPets.reverse();
+// console.log(myPets);
+// myPets.reverse();
+
+// console.log(myPets.find((item) => item.length > 3))
+// console.log(myPets.find((item) => item.includes ("og")))
+// console.log(myPets.find((item) => item.includes ("fish")))
+
+// console.log(myPets.findIndex((item) => item.length > 3))
+// console.log(myPets.findIndex((item) => item.includes ("og")))
+// console.log(myPets.findIndex((item) => item.includes ("fish")))
+
+// let p1 = myPets.slice(3)
+// console.log(p1)
+// let p2 = myPets.slice(3,5)
+// console.log(p2)
+// let p3 = myPets.slice(-3)
+// console.log(p3)
+// let p4 = myPets.slice(-3,-1)
+// console.log(p4)
+
+// let removedPets = myPets.splice(2,3)
+// console.log(myPets)
+// console.log(removedPets)
+// myPets.splice(2,0,"rabbit","guinea pig")
+// console.log(myPets)
+
+// let myPets = ["cat", "dog", "hamster", "canary", "shark", "cat", "dog"];
+// let [pet1, pet3, , pet4, pet5] = myPets;
+// console.log(pet1);
+// console.log(pet3);
+// console.log(pet4);
+
+// let myPets = ["cat", "dog"];
+// // let [pet1, , pet3] = myPets;
+// // console.log(pet1);
+// // console.log(pet3);
+
+// let [pet1 = "fish", , pet3 = "fish"] = myPets;
+// console.log(pet1)
+// console.log(pet3)
+
+// let arr1 = [100, 200, 300];
+// let arr2 = [100, 200, 300];
+// let arr3 = [10, 20, ...arr1, 500, ...arr2];
+
+// console.log(arr3)
+// console.log(arr1)
+// console.log(arr2)
+
+// let testFn = (a, b, c, d) => a + b + c + d;
+// let array  = [10,20,30,40]
+// console.log(testFn(...array))
+
+// let emptySet = new Set()
+// console.log(emptySet.size)
+// console.log(emptySet)
+// let petsSets = new Set(["cat","dog" ,"shark"])
+// console.log(petsSets.size)
+// console.log(petsSets)
+// petsSets.add("cat")
+// console.log(petsSets)
+// petsSets.add("Cat")
+// console.log(petsSets)
+// petsSets.add("cat1")
+// console.log(petsSets)
+
+// set build in function
+
+// console.log("petsSet.size:",petsSets.size)
+// petsSets.add("shark")
+// petsSets.add("hamster")
+// console.log("petsSet.size:",petsSets.size)
+// console.log("petsSet.has(shark):",petsSets.has(shark))
+// petsSets.delete("dog")
+// petsSets.delete("dog")
+// console.log("petsSet.size:",petsSets.size)
+// petsSets.clear()
+// console.log("petsSet.size:",petsSets.size)
+
+// let petsSets = new Set(["cat", "dog", "hamster"]);
+// petsSets.forEach(value => console.log(value))
+
+// petsSets.forEach((value,key) => console.log(`(${value}: ${key})`))
+
+// let petsIterator = petsSets.values()
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+// console.log(petsIterator.next().value)
+
+// let petsIterator = petsSets.values();
+// petsSets.forEach((value) => console.log(value));
+// console.log(petsIterator.next().value);
+// let result = petsIterator.next();
+// while (!result.done) {
+//   console.log(result.value);
+//   result = petsIterator.next();
+// }
+
+// let petsSets = new Set(["cat", "dog", "hamster"]);
+// console.log("petsSets:",petsSets)
+// console.log(petsSets instanceof Set)
+// let petsArray = [...petsSets]
+// console.log("petsArray:",petsSets)
+// console.log(petsArray instanceof Array)
+
+let emptyMap = new Map();
+let petsMap = new Map([
+  ["cats", 1],
+  ["dogs", 2],
+  ["hamster", 5],
+]);
+console.log(emptyMap.size);
+console.log(petsMap.size);
+console.log(emptyMap);
+console.log(petsMap);
+
+console.log(petsMap.has("dogs"));
+console.log(petsMap.has("shark"));
+console.log(petsMap.has(1));
+console.log(petsMap.get("hamster"));
+petsMap.set("hamster", 6);
+console.log(petsMap.get("hamster"))
+petsMap.delete("hamster")
+console.log(petsMap.get("hamster"))
+petsMap.clear()
+console.log(petsMap.size)
+
+let anotherPetsMap = new Map([["snakes",1],["cats",3],["dogs",2]])
+// anotherPetsMap.forEach((value,key) => console.log(`${key} : ${value}`))
+
+let petsValuesIterator = anotherPetsMap.values()
+let petsKeysIterator = anotherPetsMap.keys()
+
+console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
+console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
+console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
+
