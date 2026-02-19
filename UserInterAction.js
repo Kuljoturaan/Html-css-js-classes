@@ -1901,3 +1901,7 @@ x = Math.pow(Math.E,2)
 console.log(Math.log(x))
 console.log(Math.log2(16))
 console.log(Math.log10(1000))
+
+console.log(Math.cos(Math.PI/3))
+console.log(Math.tan(Math.PI/4))
+console.log(Math.asin(1))
