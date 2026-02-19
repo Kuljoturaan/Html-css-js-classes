@@ -1763,35 +1763,141 @@ let number = [10, 20, 30, 50, 80, 90, 100];
 // console.log("petsArray:",petsSets)
 // console.log(petsArray instanceof Array)
 
-let emptyMap = new Map();
-let petsMap = new Map([
-  ["cats", 1],
-  ["dogs", 2],
-  ["hamster", 5],
-]);
-console.log(emptyMap.size);
-console.log(petsMap.size);
-console.log(emptyMap);
-console.log(petsMap);
+// let emptyMap = new Map();
+// let petsMap = new Map([
+//   ["cats", 1],
+//   ["dogs", 2],
+//   ["hamster", 5],
+// ]);
+// console.log(emptyMap.size);
+// console.log(petsMap.size);
+// console.log(emptyMap);
+// console.log(petsMap);
 
-console.log(petsMap.has("dogs"));
-console.log(petsMap.has("shark"));
-console.log(petsMap.has(1));
-console.log(petsMap.get("hamster"));
-petsMap.set("hamster", 6);
-console.log(petsMap.get("hamster"))
-petsMap.delete("hamster")
-console.log(petsMap.get("hamster"))
-petsMap.clear()
-console.log(petsMap.size)
+// console.log(petsMap.has("dogs"));
+// console.log(petsMap.has("shark"));
+// console.log(petsMap.has(1));
+// console.log(petsMap.get("hamster"));
+// petsMap.set("hamster", 6);
+// console.log(petsMap.get("hamster"))
+// petsMap.delete("hamster")
+// console.log(petsMap.get("hamster"))
+// petsMap.clear()
+// console.log(petsMap.size)
 
-let anotherPetsMap = new Map([["snakes",1],["cats",3],["dogs",2]])
+// let anotherPetsMap = new Map([["snakes",1],["cats",3],["dogs",2]])
 // anotherPetsMap.forEach((value,key) => console.log(`${key} : ${value}`))
 
-let petsValuesIterator = anotherPetsMap.values()
-let petsKeysIterator = anotherPetsMap.keys()
+// let petsValuesIterator = anotherPetsMap.values()
+// let petsKeysIterator = anotherPetsMap.keys()
 
-console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
-console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
-console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
+// console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
+// console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
+// console.log(petsKeysIterator.next().value+ ":"+petsValuesIterator.next().value)
 
+// let petsIterator = anotherPetsMap.entries();
+// let result = petsIterator.next()
+// while(!result.done) {
+//   console.log(result.value)
+//   result = petsIterator.next()
+// }
+
+// let petsArray = ["cat","dog","hamster"]
+// for(let pet of petsArray) {
+//   console.log(pet)
+// }
+// let petsSet = new Set(["cat","dog","hamster"])
+// for(let pets of petsSet) {
+//   console.log(pets)
+// }
+
+// let petsMap = new Map([["cat",1],["dogs",3],["hamster",2]])
+// {
+//   for(let pet of petsMap)
+//   {
+//     console.log(pet)
+//     console.log(pet[0])
+//   }
+// }
+
+// let petsMap = new Map([["cat",1],["dogs",3],["hamster",2]])
+// console.log(petsMap)
+// console.log(petsMap instanceof Map) //true
+// let petsArray = [...petsMap]
+// console.log(petsArray)
+// console.log(petsArray instanceof Array) //true
+
+// let vechicle2 = {
+//   id:"AK12113",
+//   longitude:59.358615,
+//   latitude:17.947589,
+//   getId: function() {
+//     return this.id
+//   }
+// }
+// console.log(vechicle2)
+// console.log(typeof vechicle2)
+// let vechicle2Json = JSON.stringify(vechicle2)
+// console.log(typeof vechicle2Json)
+// console.log(vechicle2Json)
+
+// let Vechicle = function (id, latitude, longitude) {
+//   this.id = id;
+//   this.latitude = latitude;
+//   this.longitude = longitude;
+// };
+// let ids = ["AK2113", "AL1024", "BA1001"];
+// let Vechicles = [];
+// ids.forEach((id) => Vechicles.push(new Vechicle(id, 59.358615, 17.947589)));
+// let vechicleJsonString = JSON.stringify(Vechicles)
+// console.log(vechicleJsonString)
+// let vechicleJson = JSON.parse(vechicleJsonString)
+// console.log(vechicleJson)
+// console.log(typeof vechicleJson)
+
+// console.log(Math.ceil(10.2)) //11
+// console.log(Math.floor(10.2)) //10
+// console.log(Math.round(10.2)) /10
+
+// console.log(Math.ceil(10.499999)) //11
+// console.log(Math.floor(10.499999)) //10
+// console.log(Math.round(10.499999)) //10
+
+// console.log(Math.ceil(10.5)) //11
+// console.log(Math.floor(10.5)) //10
+// console.log(Math.round(10.5)) //11
+
+// console.log(Math.ceil(10.8)) //11
+// console.log(Math.floor(10.8)) //10
+// console.log(Math.round(10.8)) //11
+
+// console.log(Math.random());
+
+// let randomInteger = (min, max) => {
+//   let _min = Math.ceil(min);
+//   let _max = Math.ceil(max);
+//   return Math.floor(Math.random() * (_max - _min + 1) + _min);
+// };
+// console.log(randomInteger(10, 20));
+
+
+// console.log(Math.abs(-3.25))
+// console.log(Math.abs(10))
+
+// console.log(Math.min(100,20,300,10,400))
+// numbers = [100,20,300,10,400]
+// console.log(Math.max(...numbers))
+
+console.log(Math.pow(2,3))
+console.log(Math.pow(4,2))
+console.log(Math.pow(4,-1))
+console.log(Math.pow(4,-2))
+console.log(Math.pow(4,-0.5))
+console.log(Math.pow(-1,0.5))
+
+console.log(Math.sqrt(4))
+
+x = Math.pow(Math.E,2)
+console.log(Math.log(x))
+console.log(Math.log2(16))
+console.log(Math.log10(1000))
