@@ -1880,7 +1880,6 @@ let number = [10, 20, 30, 50, 80, 90, 100];
 // };
 // console.log(randomInteger(10, 20));
 
-
 // console.log(Math.abs(-3.25))
 // console.log(Math.abs(10))
 
@@ -1888,20 +1887,89 @@ let number = [10, 20, 30, 50, 80, 90, 100];
 // numbers = [100,20,300,10,400]
 // console.log(Math.max(...numbers))
 
-console.log(Math.pow(2,3))
-console.log(Math.pow(4,2))
-console.log(Math.pow(4,-1))
-console.log(Math.pow(4,-2))
-console.log(Math.pow(4,-0.5))
-console.log(Math.pow(-1,0.5))
+// console.log(Math.pow(2,3))
+// console.log(Math.pow(4,2))
+// console.log(Math.pow(4,-1))
+// console.log(Math.pow(4,-2))
+// console.log(Math.pow(4,-0.5))
+// console.log(Math.pow(-1,0.5))
 
-console.log(Math.sqrt(4))
+// console.log(Math.sqrt(4))
 
-x = Math.pow(Math.E,2)
-console.log(Math.log(x))
-console.log(Math.log2(16))
-console.log(Math.log10(1000))
+// x = Math.pow(Math.E,2)
+// console.log(Math.log(x))
+// console.log(Math.log2(16))
+// console.log(Math.log10(1000))
 
-console.log(Math.cos(Math.PI/3))
-console.log(Math.tan(Math.PI/4))
-console.log(Math.asin(1))
+// console.log(Math.cos(Math.PI/3))
+// console.log(Math.tan(Math.PI/4))
+// console.log(Math.asin(1))
+
+// let re1 = new RegExp("c.t");
+// let re2 = /c.t/;
+
+// console.log("re1.test('cat'):", re1.test("cat"));
+// console.log("re1.test('c1t'):", re1.test("c1t"));
+// console.log("re1.test('c12t'):", re1.test("c12t"));
+// console.log("re2.test('cut'):", re2.test("cut"));
+// console.log("re2.test('cot'):", re2.test("cot"));
+// console.log("re2.test('ct'):", re2.test("ct"));
+
+// console.log("-------------");
+
+// re1 = new RegExp("c..t");
+// re2 = /c..t/;
+
+// console.log("re1.test('cat'):", re1.test("cat"));
+// console.log("re1.test('c1t'):", re1.test("c1t"));
+// console.log("re1.test('c12t'):", re1.test("c12t"));
+// console.log("re2.test('cut'):", re2.test("cut"));
+// console.log("re2.test('cot'):", re2.test("cot"));
+// console.log("re2.test('ct'):", re2.test("ct"));
+
+// let re = /\so{2,3}ps/
+// console.log(re.exec("He said : ops!"))
+// console.log(re.exec("He said : oops!"))
+// console.log(re.exec("He said : ooops!"))
+// console.log(re.exec("He said : oooops!"))
+// console.log(re.exec("He said : oooooooops!"))
+
+// let re1 = /c[aiu]t/
+// console.log(re1.exec("cattle"))
+// console.log(re1.exec("haircut"))
+// console.log(re1.exec("city"))
+
+// let re2 = /c[^au]t/
+// console.log(re2.exec("cattle"))
+// console.log(re2.exec("haircut"))
+// console.log(re2.exec("city"))
+// console.log(re2.exec("coty"))
+
+// let re = /id\d+/
+// console.log(re.exec("My ids."))
+// console.log(re.exec("id60001"))
+
+// let re1 = /^(abc\s){3}$/
+// console.log(re1.exec("abc abc abc "));
+// console.log(re1.exec("abc abc abc abc"));
+// console.log(re1.exec("abc abcabc"));
+
+// let getItem = function (array, index) {
+//   let retVal = undefined;
+//   if (index > 0 && index < array.length) {
+//     retVal = array[index];
+//   }
+//   return retVal;
+//   // return array[index]
+// };
+// let array = [10, 20, 80, 100];
+// console.log(getItem(array, 2));
+
+let getRandomItem = () => {
+  return array[Math.floor(Math.random() * array.length)];
+};
+
+let array = [10, 20, 80, 100];
+
+console.log(getRandomItem(array));
+console.log(getRandomItem(array));
