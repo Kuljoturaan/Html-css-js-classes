@@ -1965,11 +1965,55 @@ let number = [10, 20, 30, 50, 80, 90, 100];
 // let array = [10, 20, 80, 100];
 // console.log(getItem(array, 2));
 
-let getRandomItem = () => {
-  return array[Math.floor(Math.random() * array.length)];
-};
+// let getRandomItem = () => {
+//   return array[Math.floor(Math.random() * array.length)];
+// };
 
-let array = [10, 20, 80, 100];
+// let array = [10, 20, 80, 100];
 
-console.log(getRandomItem(array));
-console.log(getRandomItem(array));
+// console.log(getRandomItem(array));
+// console.log(getRandomItem(array));
+
+// function greet(name = 'Guest') {
+//   console.log('Hello ' +name)
+// }
+// greet("Kuljot")
+// greet()
+
+// function sum(...numbers) {
+//   return numbers.reduce((a,b) => a+b)
+// }
+// let result = sum(1,2,3,4,5,6)
+// console.log(result)
+
+// setTimeout(() => console.log("Hii"), 5000);
+
+// setTimeout(mycallBackFunction, 6000);
+
+// function mycallBackFunction() {
+//   console.log("This is callback is now called !");
+// }
+
+
+// function createCounter () {
+//   let count = 0
+
+//   return function innerFunction() {
+//     count++
+//     console.log(count)
+//   }
+// }
+// const counter = createCounter()
+// console.log(counter)
+// counter()
+// counter()
+// counter()
+
+// async function fetchData() {
+//   const response = await fetch('https://jsonplaceholder.typicode.com/todos')
+//   const data = await response.json();
+//   console.log("Response :",data)
+// }
+// console.log("Ok starting with api call")
+// fetchData()
+// console.log("Ok we are done with api call")
