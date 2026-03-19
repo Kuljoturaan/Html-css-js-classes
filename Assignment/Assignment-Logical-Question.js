@@ -153,8 +153,54 @@
 
 // 10. Print the EVEN numbers from 10 to -20
 
-for (i = 10; i >= -20; i--) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
+// for (i = 10; i >= -20; i--) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// 1.Print all the elements of the following array var thisIsAnArray = ["element1", "element2", "element3", "element4"];
+
+// var thisIsAnArray = ["element1", "element2", "element3", "element4"];
+
+// for (i = 0; i < thisIsAnArray.length; i++) {
+//   console.log(thisIsAnArray[i]);
+// }
+
+// 2.Write a JavaScript function to check if a string contains a specific substring
+
+// function checkSubString(str, sub) {
+//   if (str.includes(sub)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(checkSubString("Hello world", "world"));
+// console.log(checkSubString("Hello world", "cat"));
+
+// 3.Write a Program to reverse a string in JavaScript.
+
+// const str = "hello"
+// let arr = str.split("").reverse().join("")
+// console.log(arr);
+
+
+var str = "Hello"
+var arr = str.split("");
+var reversed = "";
+
+for(let i = arr.length -1; i>=0; i--) {
+  reversed+= arr[i]
 }
+console.log(reversed)
+
+// 4.Write a Program to delete a property from an object?
+
+const obj = ({
+  name:"Amit kumar",
+  age:25
+})
+
+delete obj.age
+console.log(obj)
