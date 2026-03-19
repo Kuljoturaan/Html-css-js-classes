@@ -186,21 +186,95 @@
 // console.log(arr);
 
 
-var str = "Hello"
-var arr = str.split("");
-var reversed = "";
+// var str = "Hello"
+// var arr = str.split("");
+// var reversed = "";
 
-for(let i = arr.length -1; i>=0; i--) {
-  reversed+= arr[i]
-}
-console.log(reversed)
+// for(let i = arr.length -1; i>=0; i--) {
+//   reversed+= arr[i]
+// }
+// console.log(reversed)
 
 // 4.Write a Program to delete a property from an object?
 
-const obj = ({
-  name:"Amit kumar",
-  age:25
-})
+// const obj = ({
+//   name:"Amit kumar",
+//   age:25
+// })
 
-delete obj.age
-console.log(obj)
+// delete obj.age
+// console.log(obj)
+
+
+// 5.Write a Program to add a property to an object?
+
+// var obj = ({
+//   name:"John Doe",
+//   age:35
+// })
+// obj.Address = "Sant Nagar"
+
+// console.log(obj)
+
+// // 6.Write a Program to find a sum of all the elements of an array?
+// var num = [1,2,3,4,5,6,7,8]
+// sum = 0
+
+// for(let i=0; i<num.length; i++) {
+//   sum = sum + i;
+//   console.log(sum)
+
+// }
+//  7.Write a Program to check if a number is prime or not?
+
+// let num = 6
+// let isPrime = true
+
+// if(num <=1) {
+//   isPrime = false
+// } else {
+//   for (let i = 2; i<num; i++) {
+//     if(num%i ===0) {
+//       isPrime = false
+//       break
+//     }
+//   }
+// }
+
+// console.log(isPrime)
+
+
+// 8.Write a Program to print Fibonacci sequence up to n terms?
+
+// const n = 10 
+// let a = 0
+// let b = 1
+
+// for(let i=0; i<n; i++) {
+//   console.log(a)
+//   c=a+b
+//   a=b
+//   b=c
+// }
+
+
+
+// var fact = 1
+// var n = 3
+
+// for(let i = 1 ;i<=n; i++ ) {
+//   fact = fact*i
+// }
+// console.log(fact)
+
+// 10.Print the odd numbers less than 100
+
+
+let num = 0
+
+for(let num=0; num<100; num++ ) {
+
+if(num % 2 !==0) {
+  console.log(num)
+}
+}
