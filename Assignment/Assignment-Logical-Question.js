@@ -270,11 +270,19 @@
 // 10.Print the odd numbers less than 100
 
 
-let num = 0
+// let num = 0
 
-for(let num=0; num<100; num++ ) {
+// for(let num=0; num<100; num++ ) {
 
-if(num % 2 !==0) {
-  console.log(num)
-}
-}
+// if(num % 2 !==0) {
+//   console.log(num)
+// }
+// }
+
+
+// 1.Write a JavaScript function that reverses a number.
+
+var x = 32243;
+var y = x.toString().split("");
+var result = y.reverse().join()
+console.log(result)
