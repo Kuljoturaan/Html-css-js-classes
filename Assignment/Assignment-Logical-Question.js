@@ -282,7 +282,86 @@
 
 // 1.Write a JavaScript function that reverses a number.
 
-var x = 32243;
-var y = x.toString().split("");
-var result = y.reverse().join()
-console.log(result)
+// var x = 32243;
+// var y = x.toString().split("").reverse().join().replaceAll(",","")
+// console.log("type of y", typeof y)
+// // var result = y.reverse().join()
+// console.log(y)
+
+// 2.Write a JavaScript function that checks whether a passed string is a palindrome or not?
+// A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.
+
+// let str = "madam"
+// let str = "nurse"
+
+// for (let i = 0; i < str.length / 2; i++) {
+//     console.log(str[i])
+//     if (str[i] !== str[str.length - 1 - i]) {
+//         console.log(false)
+//         return
+//     }
+// }
+// console.log(true)
+
+//3. Write a JavaScript function that generates all combinations of a string.
+// Example string : 'dog'
+// Expected Output : d,do,dog,o,og,g
+
+// let str = "dog"
+
+// for (let i = 0; i < str.length; i++) {
+
+//     let temp = ""
+//     for (j = i; j < str.length; j++) {
+//         temp += str[j]
+//         console.log(temp)
+
+//     }
+// }
+// 4. Write a JavaScript function that returns a string that has letters in alphabetical order.
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+// Assume punctuation and numbers symbols are not included in the passed string.
+
+
+// var str = 'webmaster'
+// var x = str.split("").sort().join("")
+// console.log(x) // 'abeemrstw'
+
+// 5.Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+// Example string : 'the quick brown fox'
+// Expected Output : 'The Quick Brown Fox '
+
+// let str = 'the quick brown fox'
+// result = ""
+
+// for (let i = 0; i < str.length; i++) {
+//     if (i == 0 || str[i - 1] == " ") {
+//         result += str[i].toUpperCase()
+//         console.log(result)
+
+//     } else {
+//         result += str[i]
+//     }
+// }
+// console.log(result)
+
+
+// 6.Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
+// Example string : 'Web Development Tutorial'
+// Expected Output : 'Development'
+
+
+// let str1 = "Web Development Tutorial"
+// const convToArr = str1.split(" ")
+// let longWord = ""
+
+// for(let i = 0; i < convToArr.length; i++) {
+//     // console.log(convToArr[i])
+//     if(convToArr[i].length > longWord.length) {
+//         longWord = convToArr[i]
+//     }
+
+// }
+// console.log(longWord)
+
