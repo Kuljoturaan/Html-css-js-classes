@@ -365,3 +365,41 @@
 // }
 // console.log(longWord)
 
+// 7.Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+// Note : As the letter 'y' can be regarded as both a vowel and a consonant, we do not count 'y' as vowel here.
+// Example string : 'The quick brown fox'
+// Expected Output : 5
+
+// let vowelStr = 'The quick brown fox'
+// let count = 0
+
+// for(let i = 0; i<vowelStr.length; i++) {
+//     let character = vowelStr[i].toLowerCase()
+//     if(character === "a" ||character === "e" ||character === "i" ||character === "o" ||character === "u") {
+//         count +=  1
+//     }
+// }
+// console.log(count)
+
+
+// 8.Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not using recursion.
+// Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+
+// 9.Create a for loop that prints the first 10 even numbers.
+// for (i = 0; i < 20; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i)
+//     }
+// }
+
+// 10.Find the sum of all quotients when dividing numbers 1 to 9 by 3
+let sum = 0
+
+for (let i = 1; i <= 4; i++) {
+    let quotients = Math.floor(i / 3)
+    sum +=quotients
+}
+console.log(sum)
+
+
